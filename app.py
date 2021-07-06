@@ -6,7 +6,8 @@ import json
 import torch
 from model import get_model
 from torchvision.transforms import transforms
-
+seed = 0
+torch.manual_seed(seed)
 
 
 st.title('Pokemon Classifier')

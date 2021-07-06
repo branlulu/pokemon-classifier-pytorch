@@ -5,6 +5,11 @@ import numpy as np
 from torch.nn.modules import activation
 from torch.nn.modules.pooling import MaxPool1d, MaxPool2d
 
+seed = 0
+torch.manual_seed(seed)
+if torch.cuda.is_available():
+    torch.cuda.manual_seed_all(seed)
+
 class PrintSize(nn.Module):
   def __init__(self):
     super(PrintSize, self).__init__()
