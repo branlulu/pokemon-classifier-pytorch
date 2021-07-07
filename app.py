@@ -20,14 +20,14 @@ if uploaded_file is not None:
     st.write("")
 
   # Define transformations for the image, should (note that imagenet models are trained with image size 224)
-    transformation = transforms.Compose([
-        transforms.CenterCrop(256),
+    test_transformations = transforms.Compose([
+        transforms.Resize((256,256)),
         transforms.ToTensor(),
-        transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)) # normalize to mean 0, std 1
+        transforms.Normalize((0.5,0.5,0.5), (0.5,0.5,0.5))
     ])
     
     # Preprocess the image
-    image_tensor = transformation(image).float()
+    image_tensor = test_transformations(image).float()
 
     # Add an extra batch dimension since pytorch treats all images as batches
     image_tensor = image_tensor.unsqueeze_(0)
