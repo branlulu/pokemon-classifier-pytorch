@@ -40,10 +40,12 @@ if uploaded_file is not None:
     index_to_class = list(class_indices.keys())
 
     model = get_model()
+    model.load_state_dict(torch.load('pytorch_model_4.model', map_location=torch.device('cpu') ))
+    model.eval()
+    random_data = torch.rand((1, 3, 256, 256))
+
     probabilities = model(image_tensor).detach().numpy()[0]
-        
     index = np.argsort(-probabilities)
-    
     predictions = [index_to_class[i] for i in index]
 
     st.write("RESULTS...")
