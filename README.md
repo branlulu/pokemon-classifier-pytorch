@@ -19,7 +19,7 @@ Run `streamlit run app.py` to set up the web app locally. By default, Streamlit 
 
 ## Features
 
-The app uses a convolutional network trained on a database of pokemon images. The neural network is able to classify the first 150 Pokémon from the Video Game and Television series with 60% test accuracy (from a 70-30 training-test split).
+The app uses a convolutional network trained on a database of pokemon images. The neural network is able to classify the first 150 Pokémon from the Video Game and Television series with ~55% test accuracy (from a 70-30 training-test split).
 
 The training set is modified from the following Kaggle dataset: https://www.kaggle.com/lantian773030/pokemonclassification.
 
