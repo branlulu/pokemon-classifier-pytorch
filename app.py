@@ -6,9 +6,10 @@ import json
 import torch
 from model import get_model
 from torchvision.transforms import transforms
+
+# Set seed for reproducibility
 seed = 0
 torch.manual_seed(seed)
-
 
 st.title('Pokemon Classifier')
 st.write("This is an app to classify the first 150 Pokemons.")
