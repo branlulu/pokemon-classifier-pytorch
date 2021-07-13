@@ -1,4 +1,4 @@
-# pokemon-classifier-pytorch
+# Pokemon Classifier
 
 
 ## About the project
