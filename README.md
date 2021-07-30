@@ -3,7 +3,7 @@
 
 ## About the project
 
-The app was live at http://3.235.176.30:8501/, using a AWS EC2 Instance and TMUX. However, I discovered that Streamlit Sharing hosts Streamlit apps for free, so I switched over. (Sorry, EC2 Instances cost money.) The app can now be accessed live at: https://share.streamlit.io/branlulu/pokemon-classifier-pytorch/main/app.py.
+The app was live at http://3.235.176.30:8501/, hosted on a AWS EC2 Instance. However, I discovered that Streamlit Sharing hosts Streamlit apps for free, so I switched over. (Sorry, EC2 Instances cost money.) The app can now be accessed live at: https://share.streamlit.io/branlulu/pokemon-classifier-pytorch/main/app.py.
 
 <img width="378" alt="Screen Shot 2021-07-12 at 11 22 13 PM" src="https://user-images.githubusercontent.com/16676830/125385173-01215e00-e368-11eb-9a7d-9a9d1e84ac9e.png">
 
